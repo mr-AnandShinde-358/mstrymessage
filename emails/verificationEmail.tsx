@@ -34,14 +34,14 @@ export default function VerificationEmail ({username,otp}:VerificationEmailProps
                 />
             </Head>
             <Preview>Hear&opos;s your verification code:{otp}</Preview>
-            <section>
+            <Section>
                 <Row>
                     <Heading as='h2'>Hello {username}</Heading>
                 </Row>
 
                 <Row>
                     <Text>
-                        Thank you for registering. Please use the following verification code to complete your registration:
+                        Thank you for registering. Please use the following verification code to complete your registration:verification code:{otp}
                     </Text>
                 </Row>
 
@@ -59,7 +59,7 @@ export default function VerificationEmail ({username,otp}:VerificationEmailProps
             Verify here
           </Button>
         </Row> */}
-            </section>
+            </Section>
 
         </Html>
     )
