@@ -17,14 +17,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+  
     <html lang="en">
       <AuthProvider>
       <body className={inter.className}>
-        <Navbar/>
         {children}
       <Toaster />
       </body>
       </AuthProvider>
     </html>
+    
   );
 }
